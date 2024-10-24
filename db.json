@@ -1,0 +1,341 @@
+{
+  "funcionarios": [
+    {
+      "nome": "Marcos Silva",
+      "latitude": -23.625035,
+      "longitude": -46.547743,
+      "id": "16284"
+    },
+    {
+      "nome": "Pedro Souza",
+      "latitude": -23.618463,
+      "longitude": -46.55218,
+      "id": "94712"
+    },
+    {
+      "nome": "José Santos",
+      "latitude": -23.632114,
+      "longitude": -46.554939,
+      "id": "53901"
+    },
+    {
+      "nome": "Ricardo Oliveira",
+      "latitude": -23.629875,
+      "longitude": -46.540215,
+      "id": "28463"
+    },
+    {
+      "nome": "Isabela Pereira",
+      "latitude": -23.615982,
+      "longitude": -46.539574,
+      "id": "71590"
+    },
+    {
+      "nome": "Ana Oliveira",
+      "latitude": -23.635708,
+      "longitude": -46.545624,
+      "id": "82635"
+    },
+    {
+      "nome": "Lucas Santos",
+      "latitude": -23.622553,
+      "longitude": -46.535484,
+      "id": "34791"
+    },
+    {
+      "nome": "Mariana Lima",
+      "latitude": -23.627694,
+      "longitude": -46.531291,
+      "id": "65124"
+    },
+    {
+      "nome": "Felipe Rodrigues",
+      "latitude": -23.619057,
+      "longitude": -46.559017,
+      "id": "98057"
+    },
+    {
+      "nome": "Juliana Costa",
+      "latitude": -23.630452,
+      "longitude": -46.557308,
+      "id": "23968"
+    },
+    {
+      "nome": "Bruno Gomes",
+      "latitude": -23.62438,
+      "longitude": -46.562347,
+      "id": "41873"
+    },
+    {
+      "nome": "Fernanda Ferreira",
+      "latitude": -23.634046,
+      "longitude": -46.538956,
+      "id": "59012"
+    },
+    {
+      "nome": "Rafael Almeida",
+      "latitude": -23.616578,
+      "longitude": -46.547035,
+      "id": "72358"
+    },
+    {
+      "nome": "Camila Pereira",
+      "latitude": -23.621891,
+      "longitude": -46.56462,
+      "id": "85691"
+    },
+    {
+      "nome": "Thiago Ribeiro",
+      "latitude": -23.636852,
+      "longitude": -46.541267,
+      "id": "36047"
+    },
+    {
+      "nome": "Amanda Souza",
+      "latitude": -23.626796,
+      "longitude": -46.533775,
+      "id": "17482"
+    },
+    {
+      "nome": "Gustavo Cunha",
+      "latitude": -23.617815,
+      "longitude": -46.555866,
+      "id": "93506"
+    },
+    {
+      "nome": "Larissa Rodrigues",
+      "latitude": -23.631596,
+      "longitude": -46.549675,
+      "id": "28139"
+    },
+    {
+      "nome": "Rodrigo Lima",
+      "latitude": -23.620325,
+      "longitude": -46.542892,
+      "id": "50274"
+    },
+    {
+      "nome": "Luciana Silva",
+      "latitude": -23.628942,
+      "longitude": -46.556134,
+      "id": "61738"
+    },
+    {
+      "nome": "Eduardo Costa",
+      "latitude": -23.633483,
+      "longitude": -46.544451,
+      "id": "29503"
+    },
+    {
+      "nome": "Bruna Santos",
+      "latitude": -23.61972,
+      "longitude": -46.550401,
+      "id": "74821"
+    },
+    {
+      "nome": "Victor Oliveira",
+      "latitude": -23.626133,
+      "longitude": -46.537461,
+      "id": "40695"
+    },
+    {
+      "nome": "Aline Ferreira",
+      "latitude": -23.630929,
+      "longitude": -46.553522,
+      "id": "83157"
+    },
+    {
+      "nome": "string",
+      "latitude": 0,
+      "longitude": 0,
+      "id": "B5LjJiH"
+    }
+  ],
+  "animais": [
+    {
+      "id": "78412",
+      "Tipo": "Bovino",
+      "Nome": "Estrela",
+      "Sexo": "Fêmea",
+      "Mãe": "Lua",
+      "Pai": "Sol",
+      "Raça": "Nelore",
+      "Manejos": [
+        {
+          "Tipo": "Vacinação: B12",
+          "Descrição": "Vacinação contra Brucelose",
+          "Data e Hora": "2024-10-20 10:30"
+        },
+        {
+          "Tipo": "Inseminação: IA",
+          "Descrição": "Inseminação artificial com sêmen sexado",
+          "Data e Hora": "2023-01-15 08:45"
+        }
+      ],
+      "Midias": [
+        {
+          "Tipo": "Imagem",
+          "Nome": "ferida.png",
+          "Data e Hora": "2022-05-10 10:30"
+        },
+        {
+          "Tipo": "Imagem",
+          "Descrição": "vaca.png",
+          "Data e Hora": "2023-01-15 08:45"
+        },
+        {
+          "Tipo": "Audio",
+          "Descrição": "vaca.mp3",
+          "Data e Hora": "2023-01-15 08:45"
+        }
+      ]
+    },
+    {
+      "id": "35798",
+      "Tipo": "Equino",
+      "Nome": "Relampago",
+      "Sexo": "Macho",
+      "Mãe": "Ventania",
+      "Pai": "Tornado",
+      "Raça": "Quarto de Milha",
+      "Manejos": [
+        {
+          "Tipo": "Vacinação: Raiva",
+          "Descrição": "Vacinação contra Influenza Equina",
+          "Data e Hora": "2024-10-02 14:00"
+        },
+        {
+          "Tipo": "Tosa: Padrão",
+          "Descrição": "Tosa geral",
+          "Data e Hora": "2023-06-20 09:15"
+        }
+      ],
+      "Midias": [
+        {
+          "Tipo": "Imagem",
+          "Nome": "carrapatos.png",
+          "Data e Hora": "2022-05-10 10:30"
+        },
+        {
+          "Tipo": "Imagem",
+          "Descrição": "cavalo.png",
+          "Data e Hora": "2023-01-15 08:45"
+        },
+        {
+          "Tipo": "Audio",
+          "Descrição": "cavalo.mp3",
+          "Data e Hora": "2023-01-15 08:45"
+        }
+      ]
+    },
+    {
+      "id": "96412",
+      "Tipo": "Ovino",
+      "Nome": "Nevasca",
+      "Sexo": "Fêmea",
+      "Mãe": "Nevada",
+      "Pai": "Gelado",
+      "Raça": "Santa Ines",
+      "Manejos": [
+        {
+          "Tipo": "Vacinação: Clostridiose",
+          "Descrição": "Vacinação contra Clostridiose",
+          "Data e Hora": "2022-11-15 15:45"
+        },
+        {
+          "Tipo": "Monta",
+          "Descrição": "Monta natural",
+          "Data e Hora": "2024-10-05 06:30"
+        }
+      ],
+      "Midias": [
+        {
+          "Tipo": "Imagem",
+          "Nome": "tosa.png",
+          "Data e Hora": "2022-05-10 10:30"
+        },
+        {
+          "Tipo": "Imagem",
+          "Descrição": "ovelha.png",
+          "Data e Hora": "2023-01-15 08:45"
+        },
+        {
+          "Tipo": "Audio",
+          "Descrição": "ovelha.mp3",
+          "Data e Hora": "2023-01-15 08:45"
+        }
+      ]
+    },
+    {
+      "id": "52147",
+      "Tipo": "Caprino",
+      "Nome": "Horácio",
+      "Sexo": "Macho",
+      "Mãe": "Aurora",
+      "Pai": "Crepúsculo",
+      "Raça": "Saanen",
+      "Manejos": [
+        {
+          "Tipo": "Vacinação: Febre Aftosa",
+          "Descrição": "Vacinação contra Febre Aftótica",
+          "Data e Hora": "2024-05-06 11:20"
+        },
+        {
+          "Tipo": "Tosa",
+          "Descrição": "Tosa de lã",
+          "Data e Hora": "2023-05-12 16:00"
+        }
+      ],
+      "Midias": [
+        {
+          "Tipo": "Imagem",
+          "Nome": "mosca.png",
+          "Data e Hora": "2022-05-10 10:30"
+        },
+        {
+          "Tipo": "Imagem",
+          "Descrição": "bode.png",
+          "Data e Hora": "2023-01-15 08:45"
+        },
+        {
+          "Tipo": "Audio",
+          "Descrição": "bode.mp3",
+          "Data e Hora": "2023-01-15 08:45"
+        }
+      ]
+    },
+    {
+      "id": "85473",
+      "Tipo": "Bovino",
+      "Nome": "Zebu",
+      "Sexo": "Macho",
+      "Mãe": "Helena",
+      "Pai": "Zeus",
+      "Raça": "Hereford",
+      "Manejos": [
+        {
+          "Tipo": "Vacinação: Raiva",
+          "Descrição": "Vacinação contra Raiva",
+          "Data e Hora": "2024-09-20 17:30"
+        }
+      ],
+      "Midias": [
+        {
+          "Tipo": "Imagem",
+          "Nome": "chifres.png",
+          "Data e Hora": "2024-05-10 10:30"
+        },
+        {
+          "Tipo": "Imagem",
+          "Descrição": "boi.png",
+          "Data e Hora": "2023-01-15 09:45"
+        },
+        {
+          "Tipo": "Audio",
+          "Descrição": "boi.mp3",
+          "Data e Hora": "2022-09-20 17:30"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para enviar imagem</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="file" name="imagem" id="img">
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="msg" id="msg"></div>
+</body>
+<script>
+    msg = document.querySelector("#msg");
+    form = document.querySelector("#form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let formData = new FormData(form);
+        fetch("http://localhost:3000/imgs", {
+            method: "POST",
+            body: formData
+        }).then(response => response.json())
+            .then(data => {
+                if (data.arquivo != "") {
+                    window.location.href = "http://localhost:3000/static/" + data.arquivo;
+                } else {
+                    msg.innerHTML = "Nenhum arquivo de imagem enviado";
+                }
+            }).catch(error => {
+                msg.innerHTML = "Erro ao enviar imagem";
+            });
+    });
+</script>
+
+</html>

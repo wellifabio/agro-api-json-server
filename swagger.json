@@ -1,0 +1,431 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "AGRO AGROTECH",
+    "version": "1.0.0",
+    "description": "Documentação da API AGROTECH"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Servidor local"
+    }
+  ],
+  "paths": {
+    "/static/{arquivo}": {
+      "get": {
+        "summary": "Diretório de arquivos estáticos (imagens)",
+        "tags": [
+          "Arquivos Estáticos (imagens)"
+        ],
+        "parameters": [
+          {
+            "name": "arquivo",
+            "in": "path",
+            "required": true,
+            "description": "Nome e extensão do arquivo",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sucesso"
+          },
+          "401": {
+            "description": "Não autorizado"
+          }
+        }
+      }
+    },
+    "/imgs": {
+      "post": {
+        "summary": "Envio de imagens para diretório",
+        "tags": [
+          "Arquivos Estáticos (imagens)"
+        ],
+        "requestBody": {
+          "description": "Dados de criação",
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "imagem": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                },
+                "required": [
+                  "imagem"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Sucesso"
+          },
+          "400": {
+            "description": "Erro de envio de dados"
+          }
+        }
+      }
+    },
+    "/funcionarios": {
+      "get": {
+        "summary": "Obter lista de funcionários",
+        "tags": [
+          "CRUD de Funcionários"
+        ],
+        "responses": {
+          "200": {
+            "description": "Sucesso"
+          },
+          "401": {
+            "description": "Não autorizado"
+          }
+        }
+      },
+      "post": {
+        "summary": "Criar novo elemento",
+        "tags": [
+          "CRUD de Funcionários"
+        ],
+        "requestBody": {
+          "description": "Dados de criação",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "latitude": {
+                    "type": "number"
+                  },
+                  "longitude": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "nome",
+                  "latitude",
+                  "longitude"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Criado com sucesso"
+          },
+          "400": {
+            "description": "Erro de envio de dados"
+          }
+        }
+      }
+    },
+    "/funcionarios/{id}": {
+      "patch": {
+        "summary": "Alterar elemento",
+        "tags": [
+          "CRUD de Funcionários"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID do funcionário que deve ser alterado",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Dados para alteração",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "latitude": {
+                    "type": "number"
+                  },
+                  "longitude": {
+                    "type": "number"
+                  }
+                },
+                "required": []
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Dados alterados com sucesso"
+          },
+          "404": {
+            "description": "Dados não encontrados"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Excluir elemento",
+        "tags": [
+          "CRUD de Funcionários"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID do funcionário que deve ser removido",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Excluído com sucesso"
+          },
+          "400": {
+            "description": "Id não encontrado"
+          }
+        }
+      }
+    },
+    "/animais": {
+      "get": {
+        "summary": "Obter lista de animais",
+        "tags": [
+          "CRUD de Animais"
+        ],
+        "responses": {
+          "200": {
+            "description": "Sucesso"
+          },
+          "401": {
+            "description": "Não autorizado"
+          }
+        }
+      },
+      "post": {
+        "summary": "Criar novo elemento",
+        "tags": [
+          "CRUD de Animais"
+        ],
+        "requestBody": {
+          "description": "Dados de criação",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Tipo": {
+                    "type": "string"
+                  },
+                  "Nome": {
+                    "type": "string"
+                  },
+                  "Sexo": {
+                    "type": "string"
+                  },
+                  "Mãe": {
+                    "type": "string"
+                  },
+                  "Pai": {
+                    "type": "string"
+                  },
+                  "Raça": {
+                    "type": "string"
+                  },
+                  "Manejos": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Tipo": {
+                          "type": "string"
+                        },
+                        "Descrição": {
+                          "type": "string"
+                        },
+                        "Data e Hora": {
+                          "type": "string",
+                          "format": "date-time"
+                        }
+                      }
+                    }
+                  },
+                  "Midias": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Tipo": {
+                          "type": "string"
+                        },
+                        "Nome": {
+                          "type": "string"
+                        },
+                        "Data e Hora": {
+                          "type": "string",
+                          "format": "date-time"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "Tipo",
+                  "Nome",
+                  "Sexo",
+                  "Mãe",
+                  "Pai",
+                  "Raça"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Criado com sucesso"
+          },
+          "400": {
+            "description": "Erro de envio de dados"
+          }
+        }
+      }
+    },
+    "/animais/{id}": {
+      "patch": {
+        "summary": "Alterar elemento",
+        "tags": [
+          "CRUD de Animais"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID do animal que deve ser alterado",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Dados para alteração",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Tipo": {
+                    "type": "string"
+                  },
+                  "Nome": {
+                    "type": "string"
+                  },
+                  "Sexo": {
+                    "type": "string"
+                  },
+                  "Mãe": {
+                    "type": "string"
+                  },
+                  "Pai": {
+                    "type": "string"
+                  },
+                  "Raça": {
+                    "type": "string"
+                  },
+                  "Manejos": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Tipo": {
+                          "type": "string"
+                        },
+                        "Descrição": {
+                          "type": "string"
+                        },
+                        "Data e Hora": {
+                          "type": "string",
+                          "format": "date-time"
+                        }
+                      }
+                    }
+                  },
+                  "Midias": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Tipo": {
+                          "type": "string"
+                        },
+                        "Nome": {
+                          "type": "string"
+                        },
+                        "Data e Hora": {
+                          "type": "string",
+                          "format": "date-time"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": []
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Dados alterados com sucesso"
+          },
+          "404": {
+            "description": "Dados não encontrados"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Excluir elemento",
+        "tags": [
+          "CRUD de Animais"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID do animal que deve ser removido",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Excluído com sucesso"
+          },
+          "400": {
+            "description": "Id não encontrado"
+          }
+        }
+      }
+    }
+  }
+}
