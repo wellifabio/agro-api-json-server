@@ -208,7 +208,7 @@
       "get": {
         "summary": "Obter lista de animais",
         "tags": [
-          "CRUD de Animais"
+          "CRUD de Animais, Manejos e Mídias"
         ],
         "responses": {
           "200": {
@@ -222,7 +222,7 @@
       "post": {
         "summary": "Criar novo elemento",
         "tags": [
-          "CRUD de Animais"
+          "CRUD de Animais, Manejos e Mídias"
         ],
         "requestBody": {
           "description": "Dados de criação",
@@ -312,7 +312,7 @@
       "patch": {
         "summary": "Alterar elemento",
         "tags": [
-          "CRUD de Animais"
+          "CRUD de Animais, Manejos e Mídias"
         ],
         "parameters": [
           {
@@ -404,7 +404,7 @@
       "delete": {
         "summary": "Excluir elemento",
         "tags": [
-          "CRUD de Animais"
+          "CRUD de Animais, Manejos e Mídias"
         ],
         "parameters": [
           {
