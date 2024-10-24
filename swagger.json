@@ -198,7 +198,7 @@
           "200": {
             "description": "Excluído com sucesso"
           },
-          "400": {
+          "404": {
             "description": "Id não encontrado"
           }
         }
@@ -421,7 +421,7 @@
           "200": {
             "description": "Excluído com sucesso"
           },
-          "400": {
+          "404": {
             "description": "Id não encontrado"
           }
         }
